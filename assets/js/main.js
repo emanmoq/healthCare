@@ -33,7 +33,7 @@ jQuery(function ($) {
     $(".up").on("click", function () { $("html, body").animate({ scrollTop: 0 }, "slow"); return false; });
         $('.secviceSlider').owlCarousel({
           autoplay: true,
-          loop: false,
+          loop: true,
           margin: 15,
           dots:true,
           responsive: {

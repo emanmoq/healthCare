@@ -31,15 +31,14 @@ jQuery(function ($) {
     
     });
     $(".up").on("click", function () { $("html, body").animate({ scrollTop: 0 }, "slow"); return false; });
-        $('.EventCarusel').owlCarousel({
+        $('.secviceSlider').owlCarousel({
           autoplay: true,
           loop: false,
           margin: 15,
-          nav:true,
+          dots:true,
           responsive: {
             0: {
               items: 1,
-              nav:true,
              margin:0
     
             },
@@ -51,16 +50,13 @@ jQuery(function ($) {
             }
           }
         });
-        $('.SponserSlider').owlCarousel({
+        $('.DoctorsSlider').owlCarousel({
             autoplay: true,
             loop: false,
-            margin: 15,
-            nav:true,
-       
+            margin: 15,       
             responsive: {
               0: {
                 items: 1,
-                nav:true,
       
               },
               600: {
@@ -73,14 +69,13 @@ jQuery(function ($) {
          
             }
           });
-          owl= $('.TestimonialsCarusel').owlCarousel({
+          $('.ReviewSlider').owlCarousel({
             autoplay: true,
             loop: true,
             margin: 15,
             nav:true,
-            items:1,
-            dots:true,
-            dotsContainer:".Images",
+            items:1,  
+            dots:false,      
             responsive: {
               0: {
                 nav:true,
@@ -89,56 +84,28 @@ jQuery(function ($) {
               1000:{
                   nav:true,
               }
-         
             }
           });
-          $('.Images').on('click', 'li', function(e) {
-            owl.trigger('to.owl.carousel', [$(this).index(), 300]);
-          });
-          $('.OurSpeakersCar').owlCarousel({
+         
+          $('.newsSlider').owlCarousel({
             autoplay: true,
             loop: true,
             margin: 15,
-            nav:true,
             responsive: {
               0: {
                 items:1,
-                nav:true,
 
               },
               600:{
                 items:2,
-
-                nav:true,
-              },
-              1000:{
-                items:4,
-                  nav:true,
-              }
-         
-            }
-          });
-          $('.BlogCar').owlCarousel({
-            autoplay: true,
-            loop: true,
-            margin: 15,
-            nav:false,
-            responsive: {
-              0: {
-                items:1,
-             nav:true,
-              },
-              600:{
-                items:2,
-
               },
               1000:{
                 items:3,
-               
               }
          
             }
           });
+
         
       function onScroll(event){
         var scrollPosition = $(document).scrollTop();

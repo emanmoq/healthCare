@@ -145,7 +145,7 @@ button.navbar-toggler i:nth-child(2) {
 }
 .greenBtn:hover{
     background-color: transparent;
-    color:#015D67;
+    color:#015D67;}
 /****************Animation of mobile Toggler****************/
 @-webkit-keyframes nav1 {
     50% {
@@ -187,7 +187,7 @@ button.navbar-toggler i:nth-child(2) {
     100% {
       transform: translateY(-9px) rotate(135deg); } 
     }
-}
+
 /*--------------Hero Section --------*/
 #heroSection{
     margin-top:60px;
